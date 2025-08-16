@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inflection"
+version = "0.2.0"
+description = "Find inflection points of curves using ESE and EDE methods"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy>=1.19.0",
+    "scipy>=1.5.0",
+    "matplotlib>=3.3.0",
+    "joblib>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=21.0",
+    "flake8>=3.9",
+    "mypy>=0.900",
+]
+minimal = [
+    "numpy>=1.19.0",
+    "scipy>=1.5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/priscian/inflection"
+Documentation = "https://priscian.github.io/inflection"
+Repository = "https://github.com/priscian/inflection.git"
+"Bug Tracker" = "https://github.com/priscian/inflection/issues"
+
+[tool.black]
+line-length = 88
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
