@@ -20,7 +20,7 @@ This package provides methods for finding the inflection point of a curve:
 ✅ **Robust**: Handles noisy data well
 
 Based on the methods described in:
-- Christopoulos DT. Developing methods for identifying the inflection point of a convex/concave curve. arXiv preprint arXiv:1206.5478, 2012. [dx.doi.org/10.48550/arXiv.1206.5478](https://dx.doi.org/10.48550/arXiv.1206.5478)
+- Christopoulos DT. Developing methods for identifying the inflection point of a convex/concave curve. arXiv preprint arXiv:1206.5478, 2014. [dx.doi.org/10.48550/arXiv.1206.5478](https://dx.doi.org/10.48550/arXiv.1206.5478)
 - Christopoulos DT. On the efficient identification of an inflection point. Int J Math Sci Comput 6(1):13–20, 2016. [demovtu.veltech.edu.in/wp-content/uploads/2016/04/Paper-04-2016.pdf](https://demovtu.veltech.edu.in/wp-content/uploads/2016/04/Paper-04-2016.pdf)
 - Christopoulos DT. Introducing unit invariant knee (UIK) as an objective choice for elbow point in multivariate data analysis techniques. SSRN, 2016. [dx.doi.org/10.2139/ssrn.3043076](https://dx.doi.org/10.2139/ssrn.3043076)
 

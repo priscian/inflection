@@ -7,7 +7,9 @@ The `inflection` package provides robust methods for finding inflection points o
 ## Installation
 
 ```bash
-pip install inflection
+pip install git+https://github.com/priscian/inflection.git
+## Or to force reinstallation:
+pip install --force-reinstall --no-cache-dir git+https://github.com/priscian/inflection.git
 ```
 
 ## Quick Start
@@ -84,7 +86,7 @@ import numpy as np
 from inflection import check_curve, bede
 
 x = np.linspace(0, 10, 500)
-y = 5 + 5 * np.tanh(x - 5) # Inflection at x=5
+y = 5 + 5 * np.tanh(x - 5) # Inflection at x = 5
 
 cc = check_curve(x, y)
 result = bede(x, y, cc["index"])
@@ -206,12 +208,12 @@ from inflection import check_curve, ede
 x = np.linspace(0, 10, 500)
 y_up = 5 + 5 * np.tanh(x - 5)
 cc_up = check_curve(x, y_up)
-print(f"Upward: {cc_up["ctype"]}, index={cc_up["index"]}")
+print(f"Upward: {cc_up["ctype"]}, index = {cc_up["index"]}")
 
 ## Downward sigmoid
 y_down = 5 - 5 * np.tanh(x - 5)
 cc_down = check_curve(x, y_down)
-print(f"Downward: {cc_down["ctype"]}, index={cc_down["index"]}")
+print(f"Downward: {cc_down["ctype"]}, index = {cc_down["index"]}")
 
 ## Find inflection for both
 ip_up = ede(x, y_up, cc_up["index"])
@@ -263,6 +265,14 @@ Uses the EDE method after determining curve convexity to find the knee/elbow poi
 If you use this package, please cite:
 
 ```bibtex
+@article{christopoulos2014,
+  title={Developing methods for identifying the inflection point of a convex/concave curve},
+  author={Christopoulos, Demetris T},
+  journal={arXiv preprint arXiv:1206.5478},
+  year={2014},
+  doi={10.48550/arXiv.1206.5478}
+}
+
 @article{christopoulos2016,
   title={On the efficient identification of an inflection point},
   author={Christopoulos, Demetris T},
@@ -274,12 +284,12 @@ If you use this package, please cite:
   url={https://demovtu.veltech.edu.in/wp-content/uploads/2016/04/Paper-04-2016.pdf}
 }
 
-@article{christopoulos2014,
-  title={Developing methods for identifying the inflection point of a convex/concave curve},
+@article{christopoulos2016a,
+  title={Introducing unit invariant knee (UIK) as an objective choice for elbow point in multivariate data analysis techniques},
   author={Christopoulos, Demetris T},
-  journal={arXiv preprint arXiv:1206.5478},
-  year={2014},
-  doi={10.48550/arXiv.1206.5478}
+  journal={SSRN 3043076},
+  year={2016},
+  doi={10.2139/ssrn.3043076}
 }
 ```
 
@@ -288,8 +298,9 @@ If you use this package, please cite:
 - [GitHub Repository](https://github.com/priscian/inflection)
 - [API Reference](api_reference.md)
 - [Original R Package](https://cran.r-project.org/package=inflection)
-- [Theory Paper 2016](http://dx.doi.org/10.2139/ssrn.3043076)
 - [Theory Paper 2014](https://arxiv.org/abs/1206.5478)
+- [Theory Paper 2016](https://demovtu.veltech.edu.in/wp-content/uploads/2016/04/Paper-04-2016.pdf)
+- [UIK Paper 2016](https://dx.doi.org/10.2139/ssrn.3043076)
 
 ## Contributing
 
@@ -297,7 +308,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-MIT License - see LICENSE file for details.
+MIT License—see LICENSE file for details.
 
 ## Acknowledgments
 
