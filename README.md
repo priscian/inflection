@@ -1,7 +1,7 @@
 # inflection - Python Package
 
 [![Tests](https://github.com/priscian/inflection/actions/workflows/tests.yml/badge.svg)](https://github.com/priscian/inflection/actions/workflows/tests.yml)
-[![Python Version](https://img.shields.io/pypi/pyversions/inflection)](https://pypi.org/project/inflection/)
+![Python](https://img.shields.io/badge/python-3.12+-blue)
 [![License](https://img.shields.io/github/license/priscian/inflection)](https://github.com/priscian/inflection/blob/main/LICENSE)
 [![OS](https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20macOS-blue)](https://github.com/priscian/inflection)
 
