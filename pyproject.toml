@@ -7,7 +7,7 @@ name = "inflection"
 version = "0.2.0"
 description = "Find inflection points of curves using ESE and EDE methods"
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.12"
 license = {text = "MIT"}
 authors = [
     {name = "Your Name", email = "your.email@example.com"},
